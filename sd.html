@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | WordPress Developer</title>
+  <style>
+    /* ===== Global Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: #0d2538;
+      color: #fff;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #00c6ff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00c6ff;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("https://picsum.photos/1600/900") center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 10px 25px;
+      background: #00c6ff;
+      color: #fff;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0072ff;
+    }
+
+    /* ===== About Section ===== */
+    .about {
+      padding: 60px 100px;
+      background: #fff;
+    }
+
+    .about h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0d2538;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* ===== Skills Section ===== */
+    .skills {
+      padding: 60px 100px;
+      background: #f0f8ff;
+    }
+
+    .skills h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .skill-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 180px;
+    }
+
+    .skill h3 {
+      margin-bottom: 10px;
+      color: #0072ff;
+    }
+
+    /* ===== Projects Section ===== */
+    .projects {
+      padding: 60px 100px;
+      background: #fff;
+    }
+
+    .projects h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project p {
+      padding: 15px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    /* ===== Contact Section ===== */
+    .contact {
+      padding: 60px 100px;
+      background: #f0f8ff;
+      text-align: center;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #0d2538;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <h1>Noor | WordPress Developer</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="hero">
+    <h2>Hello, I'm Noor</h2>
+    <p>A Passionate WordPress Developer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a WordPress Developer with experience in creating professional, responsive,
+      and user-friendly websites. I specialize in Elementor, WooCommerce, and custom themes.
+      My focus is to deliver websites that are not only functional but also visually appealing.
+    </p>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+      <div class="skill">
+        <h3>WordPress</h3>
+        <p>Theme & Plugin Customization</p>
+      </div>
+      <div class="skill">
+        <h3>Elementor</h3>
+        <p>Creative Page Builder Design</p>
+      </div>
+      <div class="skill">
+        <h3>WooCommerce</h3>
+        <p>E-commerce Development</p>
+      </div>
+      <div class="skill">
+        <h3>HTML & CSS</h3>
+        <p>Responsive Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-gallery">
+      <div class="project">
+        <img src="https://picsum.photos/400/200?random=1" alt="Project 1">
+        <p>Portfolio Website Design</p>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/400/200?random=2" alt="Project 2">
+        <p>E-commerce WordPress Website</p>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/400/200?random=3" alt="Project 3">
+        <p>Landing Page with Elementor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: mh7202529@email.com</p>
+    <p>Phone: +92 3216430626</p>
+    <p>Location: Pakistan</p>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 Noor - WordPress Developer | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
